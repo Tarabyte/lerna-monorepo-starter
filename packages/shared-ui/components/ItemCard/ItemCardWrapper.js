@@ -7,8 +7,4 @@ const CardWrapper = styled.div`
   align-content: flex-start;
 `
 
-export default ({ children }) => (
-  <CardWrapper>
-    {children}
-  </CardWrapper>
-)
+export default ({ children }) => <CardWrapper>{children}</CardWrapper>

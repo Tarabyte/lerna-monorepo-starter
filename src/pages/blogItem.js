@@ -6,11 +6,11 @@ const StyledAnchor = styled.a`
   display: block;
 `
 
-export default ({ pathContext: { data }}) => {
+export default ({ pathContext: { data } }) => {
   if (!data) {
     return null
   }
-  
+
   return (
     <div>
       <h1>{data.title}</h1>

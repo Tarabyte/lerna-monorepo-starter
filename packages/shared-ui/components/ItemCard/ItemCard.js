@@ -14,7 +14,7 @@ const Card = styled.div`
   cursor: pointer;
   transition: all 150ms ease-in
   width: 30%;
-  
+
   &:hover {
     position: relative;
     transform: translateY(-5px);
@@ -43,9 +43,7 @@ export default ({ data, slug }) => (
   <Card>
     <StyledLink to={`/${slug}/${data.id}`}>
       <CardImage />
-      <CardHeading>
-        {data.title}
-      </CardHeading>
+      <CardHeading>{data.title}</CardHeading>
     </StyledLink>
   </Card>
 )
